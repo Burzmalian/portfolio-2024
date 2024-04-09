@@ -1,0 +1,64 @@
+{
+  "name": "gyles-fohl-portfolio",
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "start": "remix-serve ./build/server/index.js",
+    "tsc": "tsc",
+    "analyze": "esbuild-visualizer --metadata ./build/metafile.js.json",
+    "prettier": "prettier \"**/*.+(js|json|ts|tsx|cjs)\"",
+    "prettier:list": "npm run prettier -- --list-different",
+    "prettier:fix": "npm run prettier -- --write",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install",
+    "pre-commit": "lint-staged"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.0.0-alpha.4",
+    "@headlessui/tailwindcss": "^0.2.0",
+    "@heroicons/react": "^2.1.3",
+    "@remix-run/node": "^2.8.1",
+    "@remix-run/react": "^2.8.1",
+    "@remix-run/serve": "^2.8.1",
+    "clsx": "^2.1.0",
+    "gyles-ui": "^1.0.15",
+    "isbot": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.8.1",
+    "@tailwindcss/forms": "^0.5.7",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "esbuild-visualizer": "^0.6.0",
+    "eslint": "^8.38.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.1.6",
+    "vite": "^5.1.0",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "build",
+    "package.json",
+    "package-lock.json",
+    ".vercel",
+    ".cache"
+  ]
+}
