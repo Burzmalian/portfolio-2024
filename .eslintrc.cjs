@@ -83,6 +83,7 @@ module.exports = {
   ],
 
   rules: {
+    "react/no-unescaped-entities": 0,
     "import/order": [
       "error",
       {
