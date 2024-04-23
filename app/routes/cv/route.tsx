@@ -1,6 +1,6 @@
 export default function CV() {
   return (
-    <div className="px-11 py-10 grid grid-cols-[2.9fr_1.1fr] gap-x-8 gap-y-6">
+    <div className="px-11 py-10 grid grid-cols-[2.9fr_1.1fr] gap-x-8 gap-y-6 mx-auto max-w-7xl">
       <div className="flex flex-col gap-3">
         <h1 className="text-4xl font-bold">Gyles Fohl</h1>
         <p className="text-lg">Senior Software Engineer</p>
@@ -9,6 +9,7 @@ export default function CV() {
       <ul className="text-sm font-bold">
         <li>gylesfohl@gmail.com</li>
         <li>linkedin.com/in/gylesfohl</li>
+        <li>github.com/Burzmalian</li>
         <li>(612) 850-7984</li>
         <li>Minneapolis, MN</li>
       </ul>

@@ -31,7 +31,7 @@ export const routeData = {
 // routeData used in Navigation
 export const navigationData = [
   routeData.home,
-  routeData.about,
-  routeData.projects,
+  //routeData.about,
+  //routeData.projects,
   routeData.cv,
 ];

@@ -1,19 +1,15 @@
-import Hero from "./Hero";
+import { About } from "./About";
+// import { Contact } from "./Contact";
+import { Hero } from "./Hero";
+import Projects from "./Projects";
 
 export default function Home() {
   return (
     <>
-      <div className="bg-slate-600">
-        <Hero />
-      </div>
-      <div className="mx-auto max-w-7xl px-6 py-12">
-        About intro left, picture right
-      </div>
-      <div className="mx-auto max-w-7xl px-6 py-12">
-        Projects left cards / CV Right logo list
-      </div>
-      <div className="mx-auto max-w-7xl px-6 py-12">Contact</div>
+      <Hero />
+      <About />
+      <Projects />
+      {/* <Contact /> */}
     </>
   );
 }
-// TODO: Container, Wrapper

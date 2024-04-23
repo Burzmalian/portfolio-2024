@@ -3,14 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, NavLink } from "@remix-run/react";
 import { useState } from "react";
 
-import { routeData } from "~/utils/routeData";
-
-const headerNavigationData = [
-  routeData.home,
-  routeData.about,
-  routeData.cv,
-  routeData.projects,
-];
+import { routeData, navigationData } from "~/utils/routeData";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,12 +11,12 @@ const Header = () => {
   return (
     <header className="bg-white">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 gap-10"
         aria-label="Global"
       >
         <div className="flex flex-1">
           <div className="hidden lg:flex lg:gap-x-12">
-            {headerNavigationData.map((item) => (
+            {navigationData.map((item) => (
               <Link
                 key={item.name}
                 to={item.route}
@@ -72,7 +65,7 @@ const Header = () => {
             </Link>
           </div>
           <div className="mt-6 space-y-2">
-            {headerNavigationData.map((item) => (
+            {navigationData.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.route}
