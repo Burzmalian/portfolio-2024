@@ -10,13 +10,13 @@ export const routeData = {
   },
   about: {
     name: "About",
-    route: "/about",
+    route: "/#about",
     title: `About ${affix}`,
     description: ``,
   },
   projects: {
     name: "Projects",
-    route: "/projects",
+    route: "/#projects",
     title: `Projects ${affix}`,
     description: ``,
   },
@@ -31,7 +31,7 @@ export const routeData = {
 // routeData used in Navigation
 export const navigationData = [
   routeData.home,
-  //routeData.about,
-  //routeData.projects,
+  routeData.about,
+  routeData.projects,
   routeData.cv,
 ];
