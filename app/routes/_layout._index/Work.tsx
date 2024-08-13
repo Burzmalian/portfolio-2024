@@ -49,10 +49,10 @@ export const Work = () => {
       </ol>
       <Button
         href="/cv"
-        className="group mt-6 w-full border text-card-foreground"
+        className="group mt-6 w-full bg-primary text-primary-foreground"
       >
         Go to CV
-        <ArrowRightIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+        <ArrowRightIcon className="h-4 w-4" />
       </Button>
     </div>
   );
