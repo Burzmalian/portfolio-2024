@@ -3,6 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, NavLink } from "@remix-run/react";
 import { useState } from "react";
 
+import { ThemeToggle } from "~/components/ThemeToggle";
 import { routeData, navigationData } from "~/utils/routeData";
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
     <header className="bg-background">
       <nav className="mx-auto flex max-w-7xl p-6 md:px-8" aria-label="Global">
         <div className="flex flex-1 md:justify-center">
-          <div className="hidden md:flex md:gap-x-12">
+          <div className="hidden md:flex md:gap-x-12 items-center">
             {navigationData.map((item) => (
               <Link
                 key={item.name}
@@ -22,6 +23,7 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <ThemeToggle />
           </div>
           <div className="flex md:hidden">
             <button

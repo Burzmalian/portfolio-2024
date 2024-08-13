@@ -111,7 +111,7 @@ export function InnerLayout({
       <body className="h-full relative flex flex-col" suppressHydrationWarning>
         <a
           href="#main"
-          className="transition left-0 bg-white rounded-md absolute py-1 px-2 text-sm border-slate-900 m-3 -translate-y-16 focus:translate-y-0 z-50"
+          className="transition left-0 bg-popover text-popover-foreground rounded-md absolute py-1 px-2 text-sm border m-3 -translate-y-16 focus:translate-y-0 z-50"
         >
           Skip to main content
         </a>
