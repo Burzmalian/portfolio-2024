@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 export const Container = ({
   children,
   className,
@@ -9,8 +11,18 @@ export const Container = ({
   return <div className={className}>{children}</div>;
 };
 
-const ContainerInner = ({ children }: { children: React.ReactNode }) => {
-  return <div className="mx-auto max-w-7xl px-6 py-12">{children}</div>;
+const ContainerInner = ({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) => {
+  return (
+    <div className={clsx("mx-auto max-w-7xl px-6 py-12", className)}>
+      {children}
+    </div>
+  );
 };
 
 Container.Inner = ContainerInner;

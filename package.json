@@ -27,7 +27,8 @@
     "gyles-ui": "^1.0.15",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "remix-themes": "^1.5.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.8.1",
