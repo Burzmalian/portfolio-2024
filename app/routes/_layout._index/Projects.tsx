@@ -1,6 +1,7 @@
-import { Container } from "~/components/Container";
+import { CogIcon } from "@heroicons/react/24/outline";
+
+import { ProjectCard } from "./ProjectCard";
 import { LogoMicosoft as Logo } from "~/components/LogoMicrosoft";
-import { ProjectCard } from "~/components/ProjectCard";
 
 const cards = [
   {
@@ -31,23 +32,19 @@ const cards = [
   },
 ];
 
-export default function Projects() {
+export const Projects = () => {
   return (
-    <Container className="relative bg-background text-foreground">
-      <Container.Inner>
-        <div id="projects" />
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Recent Projects
-        </h2>
-        <p className="mt-2 text-lg leading-8 ">
-          My most recent contributions were made to these projects
-        </p>
-        <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {cards.map((card) => (
-            <ProjectCard key={card.id} {...card} />
-          ))}
-        </div>
-      </Container.Inner>
-    </Container>
+    <div>
+      <div id="projects" />
+      <h2 className="flex text-sm font-semibold text-foreground">
+        <CogIcon className="h-6 w-6 flex-none" />
+        <span className="ml-3">Projects</span>
+      </h2>
+      <div className="flex flex-col gap-4 mt-6">
+        {cards.map((card) => (
+          <ProjectCard key={card.id} {...card} />
+        ))}
+      </div>
+    </div>
   );
-}
+};

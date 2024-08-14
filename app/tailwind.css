@@ -8,6 +8,9 @@
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
+    --background-2: 120, 6%, 97%;
+    --foreground-2: 222.2 84% 4.9%;
+
     /* Muted backgrounds such as <TabsList />, <Skeleton /> and <Switch /> */
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -60,6 +63,10 @@
   :root[class~="dark"] {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
+
+    --background-2: 222, 40%, 10%;
+    --foreground-2: 210 40% 98%;
+
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
     --popover: 222.2 84% 4.9%;
@@ -92,3 +99,17 @@
     scroll-behavior: smooth;
   }
 }
+
+/*Gradient Animation*/
+/* .css-selector {
+  background: linear-gradient(174deg, #debae5, #70dd95);
+  background-size: 400% 400%;
+
+  animation: AnimationName 15s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%{background-position:46% 0%}
+  50%{background-position:55% 100%}
+  100%{background-position:46% 0%}
+} */
