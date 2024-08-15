@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-foreground">
             &copy; {new Date().getFullYear().toString()} Gyles Fohl | All rights
-            reserved.
+            reserved
           </p>
         </div>
       </Container.Inner>
