@@ -13,7 +13,7 @@ const Header = () => {
     <header className="bg-background">
       <nav className="mx-auto flex max-w-7xl p-6 md:px-8" aria-label="Global">
         <div className="flex flex-1 md:justify-center">
-          <div className="hidden md:flex md:gap-x-12 items-center">
+          <div className="hidden items-center md:flex md:gap-x-12">
             {navigationData.map((item) => (
               <Link
                 key={item.name}

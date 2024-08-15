@@ -14,7 +14,7 @@ export default function Home() {
         <Container.Inner>
           <div
             id="projects"
-            className="flex flex-col lg:flex-row gap-12 justify-between"
+            className="flex flex-col justify-between gap-12 lg:flex-row"
           >
             <Projects />
             <Work />

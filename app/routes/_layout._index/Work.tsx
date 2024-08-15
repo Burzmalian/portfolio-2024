@@ -37,7 +37,7 @@ export const Work = () => {
   ];
 
   return (
-    <div className="bg-card text-card-foreground basis-80 shrink-0 grow">
+    <div className="shrink-0 grow basis-80 bg-card text-card-foreground">
       <h2 className="flex text-sm font-semibold">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>
@@ -49,7 +49,7 @@ export const Work = () => {
       </ol>
       <Link
         href="/cv"
-        className="inline-flex items-center gap-2.5 px-3 rounded-md font-bold py-2 mt-6 bg-primary text-primary-foreground hover:bg-primary/90"
+        className="mt-6 inline-flex items-center gap-2.5 rounded-md bg-primary px-3 py-2 font-bold text-primary-foreground hover:bg-primary/90"
       >
         Go to CV
         <ArrowRightIcon className="h-4 w-4" />

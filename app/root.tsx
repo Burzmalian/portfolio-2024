@@ -32,7 +32,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 export const meta: MetaFunction = ({ location }) => {
   const { title, description } =
     Object.values(routeData).find(
-      (route) => route.route === location.pathname
+      (route) => route.route === location.pathname,
     ) || {};
   return [{ title: title }, { name: "description", content: description }];
 };
@@ -75,7 +75,7 @@ export function ErrorBoundary() {
         <Meta />
         <Links />
       </head>
-      <body className="h-full relative">
+      <body className="relative h-full">
         {/* <Error error={error} /> */}
         <Scripts />
         <SpeedInsights />
@@ -106,10 +106,10 @@ export function InnerLayout({
         <Meta />
         <Links />
       </head>
-      <body className="h-full relative flex flex-col" suppressHydrationWarning>
+      <body className="relative flex h-full flex-col" suppressHydrationWarning>
         <a
           href="#main"
-          className="transition left-0 bg-popover text-popover-foreground rounded-md absolute py-1 px-2 text-sm border m-3 -translate-y-16 focus:translate-y-0 z-50"
+          className="absolute left-0 z-50 m-3 -translate-y-16 rounded-md border bg-popover px-2 py-1 text-sm text-popover-foreground transition focus:translate-y-0"
         >
           Skip to main content
         </a>

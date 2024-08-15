@@ -73,7 +73,7 @@ export const TechCloud = () => {
     <Container className="bg-background text-foreground">
       <Container.Inner>
         <div id="tech" />
-        <h2 className="flex text-sm font-semibold mb-6">
+        <h2 className="mb-6 flex text-sm font-semibold">
           <BeakerIcon className="h-6 w-6 flex-none" />
           <span className="ml-3">Tech</span>
         </h2>
