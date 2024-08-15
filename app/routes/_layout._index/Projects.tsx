@@ -40,7 +40,7 @@ export const Projects = () => {
         <CogIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Projects</span>
       </h2>
-      <div className="flex flex-col gap-4 mt-6">
+      <div className="mt-6 flex flex-col gap-4">
         {cards.map((card) => (
           <ProjectCard key={card.id} {...card} />
         ))}

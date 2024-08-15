@@ -7,7 +7,7 @@ export function ThemeToggle() {
   return (
     <button
       type="button"
-      className="bg-muted text-muted-foreground rounded-full p-2.5"
+      className="rounded-full bg-muted p-2.5 text-muted-foreground"
       onClick={() => setTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT)}
     >
       {theme === Theme.LIGHT && <SunIcon className="h-[1.2rem] w-[1.2rem]" />}
