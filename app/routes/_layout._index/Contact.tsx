@@ -2,7 +2,7 @@ import { Container } from "~/components/Container";
 
 export const Contact = () => {
   return (
-    <Container className="bg-gray-800 relative overflow-hidden">
+    <Container className="relative overflow-hidden bg-gray-800">
       <svg
         viewBox="0 0 1024 1024"
         className="absolute inset-0"
@@ -31,7 +31,7 @@ export const Contact = () => {
       </svg>
       <Container.Inner>
         <div className="relative isolate flex flex-col gap-10 overflow-hidden xl:flex-row xl:items-center">
-          <h2 className="max-w-2xl text-3xl font-bold tracking-tight sm:leading-snug text-white sm:text-4xl xl:max-w-none xl:flex-auto">
+          <h2 className="max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-snug xl:max-w-none xl:flex-auto">
             Ask me anything.
           </h2>
           <form className="w-full max-w-md">
