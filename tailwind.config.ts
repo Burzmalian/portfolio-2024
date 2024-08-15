@@ -7,6 +7,8 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        "background-2": "hsl(var(--background-2))",
+        "foreground-2": "hsl(var(--foreground-2))",
         card: "hsl(var(--card))",
         "card-foreground": "hsl(var(--card-foreground))",
         popover: "hsl(var(--popover))",

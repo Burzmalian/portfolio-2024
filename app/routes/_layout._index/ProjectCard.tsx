@@ -1,11 +1,10 @@
 import { LinkIcon } from "@heroicons/react/24/outline";
-import { ReactNode } from "react";
 
 type ProjectCardProps = {
   title: string;
   href: string;
   description: string;
-  logo: ReactNode;
+  logo: React.ReactNode;
   linkText: string;
 };
 
@@ -13,10 +12,10 @@ export const ProjectCard = (props: ProjectCardProps) => {
   const { title, href, description, logo, linkText } = props;
 
   return (
-    <article className="flex flex-col items-start p-6 rounded-md group relative bg-card border">
+    <article className="flex flex-col items-start p-6 rounded-md group relative border hover:bg-background-2">
       <div className="max-w-xl flex flex-col w-full h-full justify-between">
         <div>
-          <div className="h-10 w-10 rounded-full flex items-center bg-white justify-center text-2xl">
+          <div className="h-10 w-10 rounded-full flex items-center bg-foreground p-2.5 justify-center text-2xl">
             {logo}
           </div>
           <h3 className="mt-3 text-xl font-bold leading-6 text-card-foreground">
@@ -25,7 +24,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
               {title}
             </a>
           </h3>
-          <p className="mt-3 line-clamp-3 text-sm leading-6 text-card-foreground">
+          <p className="mt-3 line-clamp-3 text-sm leading-6 text-muted-foreground">
             {description}
           </p>
         </div>

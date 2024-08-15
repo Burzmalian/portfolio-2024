@@ -16,8 +16,9 @@ export const Hero = () => {
           </h1>
           <p className="mt-5 text-xl leading-8 text-muted-foreground">
             I am Gyles Fohl, a software engineer based out of Minneapolis. I
-            have 10+ years of experience, and love building things that are
-            performant, usable, accessible, and beautiful.
+            have 12+ years of experience, and love building things that are
+            performant, usable, accessible, and beautiful. I specialize in
+            building design systems and component libraries.
           </p>
         </div>
       </Container.Inner>

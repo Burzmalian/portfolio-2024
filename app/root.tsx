@@ -55,7 +55,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <ThemeProvider
       specifiedTheme={data?.theme as Theme}
-      themeAction="/resources/set-theme"
+      themeAction="/action/set-theme"
     >
       <InnerLayout ssrTheme={Boolean(data?.theme)}>{children}</InnerLayout>
     </ThemeProvider>
