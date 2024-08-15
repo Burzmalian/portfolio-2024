@@ -1,9 +1,4 @@
 import {
-  MetaFunction,
-  LinksFunction,
-  LoaderFunctionArgs,
-} from "@remix-run/node";
-import {
   Links,
   Meta,
   Outlet,
@@ -11,6 +6,7 @@ import {
   ScrollRestoration,
   useRouteLoaderData,
 } from "@remix-run/react";
+import { MetaFunction, LinksFunction, LoaderFunctionArgs } from "@vercel/remix";
 import {
   PreventFlashOnWrongTheme,
   Theme,
