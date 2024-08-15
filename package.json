@@ -24,6 +24,7 @@
     "@remix-run/react": "^2.11.1",
     "@remix-run/serve": "^2.11.1",
     "@vercel/remix": "^2.11.1",
+    "@vercel/speed-insights": "^1.0.12",
     "clsx": "^2.1.0",
     "gyles-ui": "^1.0.15",
     "isbot": "^4.1.0",

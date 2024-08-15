@@ -7,6 +7,7 @@ import {
   useRouteLoaderData,
 } from "@remix-run/react";
 import { MetaFunction, LinksFunction, LoaderFunctionArgs } from "@vercel/remix";
+import { SpeedInsights } from "@vercel/speed-insights/remix";
 import {
   PreventFlashOnWrongTheme,
   Theme,
@@ -77,6 +78,7 @@ export function ErrorBoundary() {
       <body className="h-full relative">
         {/* <Error error={error} /> */}
         <Scripts />
+        <SpeedInsights />
       </body>
     </html>
   );
