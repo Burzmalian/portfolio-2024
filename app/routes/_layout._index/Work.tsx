@@ -1,5 +1,5 @@
 import { ArrowRightIcon, BriefcaseIcon } from "@heroicons/react/24/outline";
-import { Button } from "gyles-ui";
+import { Link } from "gyles-ui";
 
 import { LogoMicosoft as Logo } from "~/components/LogoMicrosoft";
 import { LogoTR } from "~/components/LogoTR";
@@ -27,6 +27,13 @@ export const Work = () => {
       start: "2012",
       end: "2020",
     },
+    {
+      company: "J. Murphy & Associates",
+      title: "Web Developer",
+      //logo: logoStarbucks,
+      start: "2011",
+      end: "2012",
+    },
   ];
 
   return (
@@ -40,13 +47,13 @@ export const Work = () => {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      <Button
+      <Link
         href="/cv"
-        className="group mt-6 w-full bg-primary text-primary-foreground"
+        className="inline-flex items-center gap-2.5 px-3 rounded-md font-bold py-2 mt-6 bg-primary text-primary-foreground hover:bg-primary/90"
       >
         Go to CV
         <ArrowRightIcon className="h-4 w-4" />
-      </Button>
+      </Link>
     </div>
   );
 };
