@@ -14,6 +14,12 @@ export const routeData = {
     title: `About ${affix}`,
     description: ``,
   },
+  tech: {
+    name: "Tech",
+    route: "/#tech",
+    title: `Tech ${affix}`,
+    description: ``,
+  },
   projects: {
     name: "Projects",
     route: "/#projects",
@@ -31,7 +37,8 @@ export const routeData = {
 // routeData used in Navigation
 export const navigationData = [
   routeData.home,
-  routeData.about,
+  //routeData.about,
   routeData.projects,
+  routeData.tech,
   routeData.cv,
 ];

@@ -3,12 +3,14 @@ import clsx from "clsx";
 export const Container = ({
   children,
   className,
+  as,
 }: {
   children: React.ReactNode;
   className?: string;
+  as?: React.ElementType;
 }) => {
-  // TODO: add set of backgrounds, instead of classes
-  return <div className={className}>{children}</div>;
+  const Component = as || "div";
+  return <Component className={className}>{children}</Component>;
 };
 
 const ContainerInner = ({
@@ -19,9 +21,7 @@ const ContainerInner = ({
   className?: string;
 }) => {
   return (
-    <div className={clsx("mx-auto max-w-7xl px-6 py-12", className)}>
-      {children}
-    </div>
+    <div className={clsx("mx-auto max-w-6xl p-12", className)}>{children}</div>
   );
 };
 

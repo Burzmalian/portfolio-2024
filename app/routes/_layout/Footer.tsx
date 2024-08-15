@@ -1,7 +1,9 @@
 import { SVGProps } from "react";
 import { JSX } from "react/jsx-runtime";
 
-const navigation = [
+import { Container } from "~/components/Container";
+
+const footerNavigation = [
   {
     name: "GitHub",
     href: "https://github.com/Burzmalian",
@@ -19,10 +21,10 @@ const navigation = [
 
 export default function Footer() {
   return (
-    <footer className="bg-background">
-      <div className="mx-auto max-w-7xl px-6 py-10 md:flex md:items-center md:justify-between lg:px-8">
+    <Container className="bg-background">
+      <Container.Inner className="md:flex md:items-center md:justify-between">
         <div className="flex justify-center space-x-6 md:order-2">
-          {navigation.map((item) => (
+          {footerNavigation.map((item) => (
             <a
               key={item.name}
               href={item.href}
@@ -39,7 +41,7 @@ export default function Footer() {
             reserved.
           </p>
         </div>
-      </div>
-    </footer>
+      </Container.Inner>
+    </Container>
   );
 }
