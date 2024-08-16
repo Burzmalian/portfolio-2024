@@ -116,6 +116,7 @@ export function InnerLayout({
         {children}
         <ScrollRestoration />
         <PreventFlashOnWrongTheme ssrTheme={ssrTheme} />
+        <SpeedInsights />
         <Scripts />
       </body>
     </html>
