@@ -1,4 +1,6 @@
 export default function CV() {
+  const h2 =
+    "mb-2 border-b text-lg font-bold border-indigo-700 dark:border-indigo-400 text-indigo-700 dark:text-indigo-400";
   return (
     <div className="mx-auto grid max-w-7xl gap-5 px-11 py-10 md:grid-cols-[2.9fr_1.1fr]">
       <div className="flex flex-col gap-2">
@@ -21,9 +23,7 @@ export default function CV() {
       </ul>
 
       <div>
-        <h2 className="mb-2 border-b border-indigo-600 text-lg font-bold text-indigo-700">
-          Experience
-        </h2>
+        <h2 className={h2}>Experience</h2>
         <div className="mb-3">
           <h3 className="text-lg">
             <strong>Microsoft</strong> - Senior Software Engineer
@@ -105,9 +105,7 @@ export default function CV() {
         </div>
       </div>
       <div>
-        <h2 className="mb-2 border-b border-indigo-600 text-lg font-bold text-indigo-700">
-          Skills
-        </h2>
+        <h2 className={h2}>Skills</h2>
         <ul className="mb-4 flex flex-col gap-1.5 text-sm">
           <li>Typescript/Javascript</li>
           <li>HTML5</li>
@@ -129,9 +127,7 @@ export default function CV() {
           <li>Technical SEO/Schema</li>
           <li>Telemetry Integrations</li>
         </ul>
-        <h2 className="mb-2 border-b border-indigo-600 text-lg font-bold text-indigo-700">
-          Education
-        </h2>
+        <h2 className={h2}>Education</h2>
         <p>University of Minnesota, Morris - Bachelor of Arts/Studio Art</p>
         <p className="text-xs">May 2006</p>
       </div>
