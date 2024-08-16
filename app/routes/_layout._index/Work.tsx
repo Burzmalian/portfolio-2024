@@ -30,7 +30,7 @@ export const Work = () => {
     {
       company: "J. Murphy & Associates",
       title: "Web Developer",
-      //logo: logoStarbucks,
+      logo: "J",
       start: "2011",
       end: "2012",
     },
