@@ -2,7 +2,7 @@ const Animation = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg"
-    className="absolute -z-10 rotate-180 opacity-15 transition delay-150 duration-300 ease-in-out"
+    className="absolute -z-10 rotate-180 opacity-10 transition delay-150 duration-300 ease-in-out dark:opacity-15"
     viewBox="0 0 1440 590"
   >
     <style>
