@@ -21,7 +21,9 @@ const ContainerInner = ({
   className?: string;
 }) => {
   return (
-    <div className={clsx("mx-auto max-w-6xl p-12", className)}>{children}</div>
+    <div className={clsx("mx-auto max-w-6xl px-6 py-10 sm:p-12", className)}>
+      {children}
+    </div>
   );
 };
 
