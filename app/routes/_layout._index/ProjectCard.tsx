@@ -12,7 +12,7 @@ export const ProjectCard = (props: ProjectCardProps) => {
   const { title, href, description, logo, linkText } = props;
 
   return (
-    <article className="group relative flex flex-col items-start rounded-md border p-6 hover:bg-background-2">
+    <article className="group relative flex flex-col items-start rounded-md border bg-background p-6 hover:bg-background-2">
       <div className="flex h-full w-full max-w-xl flex-col justify-between">
         <div>
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-foreground p-2.5 text-2xl">
