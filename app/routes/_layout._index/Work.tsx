@@ -37,7 +37,7 @@ export const Work = () => {
   ];
 
   return (
-    <div className="shrink-0 grow basis-80 bg-card text-card-foreground">
+    <div className="shrink-0 grow basis-80 text-card-foreground">
       <h2 className="flex text-sm font-semibold">
         <BriefcaseIcon className="h-6 w-6 flex-none" />
         <span className="ml-3">Work</span>

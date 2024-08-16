@@ -106,7 +106,10 @@ export function InnerLayout({
         <Meta />
         <Links />
       </head>
-      <body className="relative flex h-full flex-col" suppressHydrationWarning>
+      <body
+        className="relative flex h-full flex-col bg-background"
+        suppressHydrationWarning
+      >
         <a
           href="#main"
           className="absolute left-0 z-50 m-3 -translate-y-16 rounded-md border bg-popover px-2 py-1 text-sm text-popover-foreground transition focus:translate-y-0"

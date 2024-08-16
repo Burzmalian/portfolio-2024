@@ -10,7 +10,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-background">
+    <header className="">
       <nav className="mx-auto flex max-w-7xl p-6 md:px-8" aria-label="Global">
         <div className="flex flex-1 md:justify-center">
           <div className="hidden items-center md:flex md:gap-x-12">

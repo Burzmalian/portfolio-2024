@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Hero />
 
-      <Container className="bg-background">
+      <Container className="">
         <Container.Inner>
           <div
             id="projects"

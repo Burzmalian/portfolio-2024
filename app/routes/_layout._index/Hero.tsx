@@ -2,7 +2,7 @@ import { Container } from "~/components/Container";
 
 export const Hero = () => {
   return (
-    <Container className="bg-background">
+    <Container className="">
       <Container.Inner>
         <div className="flex max-w-3xl flex-col">
           <img

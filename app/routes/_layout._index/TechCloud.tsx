@@ -70,7 +70,7 @@ const TechCloudItem = ({ label, src }: { label: string; src: string }) => (
 
 export const TechCloud = () => {
   return (
-    <Container className="bg-background text-foreground">
+    <Container className="text-foreground">
       <Container.Inner>
         <div id="tech" />
         <h2 className="mb-6 flex text-sm font-semibold">
