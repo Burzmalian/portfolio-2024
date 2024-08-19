@@ -10,8 +10,8 @@ export function ThemeToggle() {
       className="rounded-full bg-muted p-2.5 text-muted-foreground"
       onClick={() => setTheme(theme === Theme.LIGHT ? Theme.DARK : Theme.LIGHT)}
     >
-      {theme === Theme.LIGHT && <SunIcon className="h-[1.2rem] w-[1.2rem]" />}
-      {theme === Theme.DARK && <MoonIcon className="h-[1.2rem] w-[1.2rem]" />}
+      {theme === Theme.LIGHT && <SunIcon className="h-4 w-4" />}
+      {theme === Theme.DARK && <MoonIcon className="h-4 w-4" />}
       <span className="sr-only">Toggle theme</span>
     </button>
   );
