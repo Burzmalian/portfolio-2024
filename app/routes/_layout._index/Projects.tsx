@@ -14,7 +14,7 @@ const cards = [
     linkText: "bing.com/pros",
   },
   {
-    id: 1,
+    id: 2,
     title: "Take Lessons",
     href: "https://takelessons.com/",
     description:
@@ -23,7 +23,7 @@ const cards = [
     linkText: "takelessons.com",
   },
   {
-    id: 1,
+    id: 3,
     title: "Flip",
     href: "https://info.flip.com/en-us.html",
     description: "Personalized learning using the power of video.",
