@@ -1,5 +1,4 @@
 {
-  "version": 3,
   "images": {
     "sizes": [56, 256, 384, 600, 1000],
     "domains": [],
