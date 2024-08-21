@@ -1,3 +1,5 @@
+import { Image } from "@unpic/react";
+
 import { Container } from "~/components/Container";
 
 export const Hero = () => {
@@ -5,10 +7,13 @@ export const Hero = () => {
     <Container className="">
       <Container.Inner>
         <div className="flex max-w-3xl flex-col">
-          <img
-            className="mb-3 inline-block h-14 w-14 rounded-full"
+          <Image
             src="/gyles-fohl.jpg"
-            alt="Gyles Fohl"
+            alt="Gyles Fohl Portrait"
+            width={56}
+            height={56}
+            priority
+            className="mb-3 inline-block h-14 w-14 rounded-full"
           />
           <h1 className="flex flex-col gap-3.5 text-5xl font-bold tracking-tight text-foreground sm:text-6xl">
             Gyles Fohl
