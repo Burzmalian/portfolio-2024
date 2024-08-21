@@ -1,5 +1,6 @@
 import { Image } from "@unpic/react";
 
+import gyles from "../../assets/gyles-fohl.jpg";
 import { Container } from "~/components/Container";
 
 export const Hero = () => {
@@ -8,7 +9,7 @@ export const Hero = () => {
       <Container.Inner>
         <div className="flex max-w-3xl flex-col">
           <Image
-            src="/gyles-fohl.jpg"
+            src={gyles}
             alt="Gyles Fohl Portrait"
             width={56}
             height={56}
