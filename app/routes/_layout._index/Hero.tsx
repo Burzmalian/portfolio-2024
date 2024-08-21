@@ -15,7 +15,6 @@ export const Hero = () => {
             height={56}
             priority
             className="mb-3 inline-block h-14 w-14 rounded-full"
-            cdn="vercel"
           />
           <h1 className="flex flex-col gap-3.5 text-5xl font-bold tracking-tight text-foreground sm:text-6xl">
             Gyles Fohl
