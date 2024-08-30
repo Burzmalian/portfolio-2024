@@ -2,7 +2,7 @@ export default function CV() {
   const h2 =
     "mb-2 border-b text-lg font-bold border-indigo-700 dark:border-indigo-400 text-indigo-700 dark:text-indigo-400";
   return (
-    <div className="mx-auto grid max-w-7xl gap-5 px-11 py-10 md:grid-cols-[2.9fr_1.1fr]">
+    <div className="mx-auto grid max-w-7xl gap-5 px-11 py-10 text-foreground md:grid-cols-[2.9fr_1.1fr]">
       <div className="flex flex-col gap-2">
         <h1 className="text-4xl font-bold">Gyles Fohl</h1>
         <p className="text-lg">Senior Software Engineer</p>
